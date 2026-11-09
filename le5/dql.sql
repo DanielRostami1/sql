@@ -44,7 +44,12 @@ select name, vorname , status
 from niederlassungbelgien 
 where status= 'aktiv';
 -- 5.7
-
+select name ,vorname
+from niederlassungholland
+union
+select name , vorname
+from niederlassungbelgien
+order by name;
 
 
 
